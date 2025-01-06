@@ -20,7 +20,7 @@ G := Group(matgens_t_r);;
 This variable contains a list of all the representatives of the classes of equivalent vector systems, each element of this list defines a space group $\hat{G}$ which is a representative of one of the affine equivalence classes of space groups with point group $G$ (or if there is a comment at the top of the file ```#no normaliser computed``` then ```translations_t_r``` is a list of representatives of the classes of strongly equivalent vector systems and some of the space groups will be in the same affine equivalence class). Each element is a list of length $8k$ which contains the translational parts of each of the generators. i.e. choosing the $i$-th vector system, the translation associated to the $j$-th generator in ```matgens_t_r``` is given by,
 
 ```
-trans_gen1 := translations_t_r[ i ]{ [ 1 + 8*j .. 8 + 8*j ] };;
+trans_gen1 := translations_t_r[ i ]{ [ 1 + 8*(j-1) .. 8 + 8*(j-1) ] };;
 ```
 
 One can build each space group $\hat{G}$ in GAP using the CRYST package: 
@@ -42,7 +42,7 @@ j := 1 #choose which translation from translations_t_r
 matgens_spacegrp := [];;
 for i in [1..Length(matgens_t_r)] do
   gen := matgens_t_r[i];
-	vec := translations_t_r[ j ]{ [ 1 + 8*i .. 8 + 8*i ] };
+	vec := translations_t_r[ j ]{ [ 1 + 8*(i-1) .. 8 + 8*(i-1) ] };
 	mat := TransposedMatMutable(ShallowCopy(gen));
 	Add(mat,vec);
 	mat := TransposedMatMutable(mat);
