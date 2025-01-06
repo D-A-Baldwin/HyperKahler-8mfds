@@ -60,3 +60,6 @@ We then computed the singular set of $R^{8}/\hat{G}$. To do this we found the fu
 This is a list of the same length as ```translations_t_r```. The $i$-th element contains information about the singular set of $R^{8}/\hat{G}$, where $\hat{G}$ is the space group built using ```translations_t_r[i]```. It is a list of the form,
 ```[Small Group ID of stabiliser group, gens_of_stabiliser, "n fixpoints", "codimension c"]```
 Here, ```gens_of_stabiliser``` is a list of words in the generators ```matgens_t_r``` where ```Fi``` corresponds to ```matgens_t_r[i]```, together these generate the stabiliser group $K$. The last two entries mean there are $n$ copies of $(C^{c}/K)\times T^{(8-c)}$ in the singular set.
+
+
+**Comments welcome** 
