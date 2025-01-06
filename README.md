@@ -38,10 +38,11 @@ for i in [1..8] do
 	Add(TransMats, mat);
 od;
 
+j := 1 #choose which translation from translations_t_r
 matgens_spacegrp := [];;
 for i in [1..Length(matgens_t_r)] do
   gen := matgens_t_r[i];
-	vec := translations_t_r[ i ]{ [ 1 + 8*j .. 8 + 8*j ] };
+	vec := translations_t_r[ j ]{ [ 1 + 8*i .. 8 + 8*i ] };
 	mat := TransposedMatMutable(ShallowCopy(gen));
 	Add(mat,vec);
 	mat := TransposedMatMutable(mat);
