@@ -1,4 +1,4 @@
-# Classifying the space groups of a given point group _(in the context of studying compact hyperKähler 8-orbifolds)_
+9# Classifying the space groups of a given point group _(in the context of studying compact hyperKähler 8-orbifolds)_
 
 This repository accompanies the paper "On Classifying HyperKähler Kummer 8-Orbifolds" - B.S.Acharya, D.A.Baldwin. To support the results stated in appendix B.
 
@@ -25,7 +25,7 @@ trans_gen_j := translations_t_r[ i ]{ [ 1 + 8*(j-1) .. 8 + 8*(j-1) ] };;
 
 One can build each space group $\hat{G}$ in GAP using the CRYST package: 
 ```
-LoadPackage("CRYST")
+LoadPackage("CRYST");
 
 TransMats := [];;
 for i in [1..8] do
