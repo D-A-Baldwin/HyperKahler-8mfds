@@ -1,4 +1,4 @@
-9# Classifying the space groups of a given point group _(in the context of studying compact hyperKähler 8-orbifolds)_
+# Classifying the space groups of a given point group _(in the context of studying compact hyperKähler 8-orbifolds)_
 
 This repository accompanies the paper "On Classifying HyperKähler Kummer 8-Orbifolds" - B.S.Acharya, D.A.Baldwin. To support the results stated in appendix B.
 
