@@ -1,6 +1,6 @@
 # Classifying the space groups of a given point group _(in the context of studying compact hyperKähler 8-orbifolds)_
 
-This repository accompanies the paper "On Classifying HyperKähler Kummer 8-Orbifolds" - B.S.Acharya, D.A.Baldwin. To support the results stated in appendix B.
+This repository accompanies the paper "On Classifying HyperKähler Kummer 8-Orbifolds" - B.S.Acharya, D.A.Baldwin, https://arxiv.org/pdf/2501.03692. To support the results stated in appendix B.
 
 In section 3.3, there are three tables with some rows higlighted blue and some rows starred. The blue rows correspond to groups G such that $C^4/G$ is known to admit a symplectic resolution. The starred rows correspond to G such that $C^4/G$ is not known to admit a symplectic resolution. 
 
